@@ -1,0 +1,1 @@
+web: venv run python manage.py runserver $PORT

@@ -1,0 +1,4 @@
+.idea
+Web_app/__pycache__
+sedan/__pycache__
+sedan/migrations/__pycache__
