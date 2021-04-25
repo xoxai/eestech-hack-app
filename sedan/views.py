@@ -5,6 +5,7 @@ from rest_framework import generics
 from sedan.serializers import Data_uploader, Data_view_serializer
 from sedan.models import Data_stor, Client
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
+
 # Create your views here.
 class DataCreateView(generics.CreateAPIView):
     serializer_class = Data_uploader
