@@ -3,7 +3,9 @@ from django.urls import path, include
 from sedan.views import *
 
 
-app_name = 'Client'
+app_name = 'upload'
 urlpatterns = [
-    path('Client/create', DataCreateView.as_view())
+    path('upload/', DataCreateView.as_view()),
+    path('view/', TableView.as_view()),
+    path('edit/<int:pk>', Table_View_Editing.as_view())
 ]
