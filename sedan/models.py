@@ -20,3 +20,12 @@ class Data_stor(models.Model):
     table_name = models.IntegerField(verbose_name='Название таблицы', choices= table_names)
     user = models.ForeignKey(User, verbose_name='Пользователь', on_delete=models.CASCADE)
     file = models.FileField()
+
+
+class Client(models.Model):
+    fio = models.CharField(verbose_name='ФИО', max_length=64 )
+    sex = models.CharField(verbose_name='Пол', max_length=64)
+    age = models.CharField(verbose_name='Возраст', max_length=64)
+    phone = models.CharField(verbose_name='Телефон', max_length=64)
+    email = models.CharField(verbose_name='e-mail', db_index=True, max_length=64)
+

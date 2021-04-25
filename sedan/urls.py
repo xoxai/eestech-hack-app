@@ -7,5 +7,6 @@ app_name = 'upload'
 urlpatterns = [
     path('upload/', DataCreateView.as_view()),
     path('view/', TableView.as_view()),
-    path('edit/<int:pk>', Table_View_Editing.as_view())
+    path('edit/<int:pk>', Table_View_Editing.as_view()),
+    path('store/', TableView.store),
 ]
