@@ -14,7 +14,7 @@ class Data_stor(models.Model):
         (4, 'Вендоры'),
         (5, 'Публичные домены'),
         (6, 'Отписавшиеся'),
-        (6, 'Мусор'),
+        (7, 'Мусор'),
 
     )
     table_name = models.IntegerField(verbose_name='Название таблицы', choices= table_names)

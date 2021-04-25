@@ -1,4 +1,5 @@
 import pandas as pd
+from sedan.models import Data_stor
 
 def get_attr(file_name: str):
 
@@ -14,6 +15,3 @@ def get_attr(file_name: str):
         attr = list(data)
         print(attr)
     return attr
-
-
-get_attr(r'UN_mail.csv')
