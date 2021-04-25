@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'Web_app',
     'rest_framework',
     'sedan',
+    'djoser'
 ]
 
 MIDDLEWARE = [
